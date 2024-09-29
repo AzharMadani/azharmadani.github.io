@@ -1,0 +1,143 @@
+[
+    {
+        "key": "group_65b0349a97a14",
+        "title": "Page Info",
+        "fields": [
+            {
+                "key": "field_65b0349a530fe",
+                "label": "Is it invisible breadcrumb?",
+                "name": "is_it_invisible_breadcrumb",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Is it invisible breadcrumb?",
+                "default_value": 1,
+                "ui_on_text": "Yes",
+                "ui_off_text": "No",
+                "ui": 1
+            },
+            {
+                "key": "field_65b039703207c",
+                "label": "Is it invisible preloader?",
+                "name": "is_it_invisible_preloader",
+                "aria-label": "",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Is it invisible breadcrumb?",
+                "default_value": 0,
+                "ui_on_text": "Yes",
+                "ui_off_text": "No",
+                "ui": 1
+            },
+            {
+                "key": "field_65b03a1e3207d",
+                "label": "Page Type",
+                "name": "page_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "Please chose page style.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "multipage": "Multi Page",
+                    "onepage": "One Page"
+                },
+                "default_value": "multipage",
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_65b03b963207f",
+                "label": "Page Dir",
+                "name": "page_dir",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "Please chose page dir style.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "ltr": "LTR",
+                    "rtl": "RTL"
+                },
+                "default_value": "ltr",
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_65b03c8c32081",
+                "label": "Custom Header Logo",
+                "name": "custom_header_logo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please choose custom logo.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

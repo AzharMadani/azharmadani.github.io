@@ -1,0 +1,972 @@
+# Copyright (C) 2023 Codeefly
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zyan 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/qs_tool_wp_pot_gen_1697716107_763_644399\n"
+"POT-Creation-Date: 2023-10-19 11:48:28+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:7
+msgid "404"
+msgstr ""
+
+#: 404.php:8
+msgid "Sorry! This page can’t found"
+msgstr ""
+
+#: 404.php:9
+msgid "The page you are looking for doesn't exist or has been moved"
+msgstr ""
+
+#: 404.php:12
+msgid "Back to Homepage"
+msgstr ""
+
+#: comments.php:27
+msgid " Comments"
+msgstr ""
+
+#: comments.php:27
+msgid " Comment "
+msgstr ""
+
+#: comments.php:51
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:54
+msgid "&larr; Older "
+msgstr ""
+
+#: comments.php:57
+msgid "Newer &rarr;"
+msgstr ""
+
+#: comments.php:83
+msgid "Enter Name"
+msgstr ""
+
+#: comments.php:84
+msgid "Enter Email"
+msgstr ""
+
+#: comments.php:85
+msgid "Enter Website"
+msgstr ""
+
+#: comments.php:98
+msgid "Enter Your Comments"
+msgstr ""
+
+#: comments.php:103 comments.php:120
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:107
+msgid "You must be"
+msgstr ""
+
+#: comments.php:107
+msgid "logged in"
+msgstr ""
+
+#: comments.php:107
+msgid "to post a comment."
+msgstr ""
+
+#: comments.php:112
+msgid "Logged in as"
+msgstr ""
+
+#: comments.php:112
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:112
+msgid "Log out?"
+msgstr ""
+
+#: comments.php:117
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php:118
+msgid "Leave a comment to %s"
+msgstr ""
+
+#: comments.php:119
+msgid "Cancel reply"
+msgstr ""
+
+#: functions.php:46
+msgid "Primary"
+msgstr ""
+
+#: inc/add_plugin.php:31
+msgid "Elementor Page Builder"
+msgstr ""
+
+#: inc/add_plugin.php:36
+msgid "CF Core "
+msgstr ""
+
+#: inc/add_plugin.php:43
+msgid "WP Classic Editor"
+msgstr ""
+
+#: inc/add_plugin.php:48
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/add_plugin.php:53
+msgid "One Click Demo Import"
+msgstr ""
+
+#: inc/add_plugin.php:58
+msgid "Kirki Customizer Framework"
+msgstr ""
+
+#: inc/add_plugin.php:63
+msgid "Breadcrumb NavXT"
+msgstr ""
+
+#: inc/add_plugin.php:79 inc/class-tgm-plugin-activation.php:340
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/add_plugin.php:80 inc/class-tgm-plugin-activation.php:341
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+
+#: inc/add_plugin.php:81 inc/class-tgm-plugin-activation.php:343
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+
+#: inc/add_plugin.php:82 inc/class-tgm-plugin-activation.php:345
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/add_plugin.php:83 inc/class-tgm-plugin-activation.php:346
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/add_plugin.php:84 inc/class-tgm-plugin-activation.php:347
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:89 inc/class-tgm-plugin-activation.php:352
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:94 inc/class-tgm-plugin-activation.php:357
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:99 inc/class-tgm-plugin-activation.php:362
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:104 inc/class-tgm-plugin-activation.php:367
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:109 inc/class-tgm-plugin-activation.php:372
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:114 inc/class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:119 inc/class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:124 inc/class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:129 inc/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/add_plugin.php:130 inc/class-tgm-plugin-activation.php:394
+#: inc/class-tgm-plugin-activation.php:3330
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/add_plugin.php:131 inc/class-tgm-plugin-activation.php:395
+#: inc/class-tgm-plugin-activation.php:3115
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/add_plugin.php:132 inc/class-tgm-plugin-activation.php:397
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/add_plugin.php:133 inc/class-tgm-plugin-activation.php:399
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+
+#: inc/add_plugin.php:134 inc/class-tgm-plugin-activation.php:401
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/add_plugin.php:135 inc/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/add_plugin.php:136 inc/class-tgm-plugin-activation.php:403
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: inc/add_plugin.php:137 inc/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/class-navwalker.php:366
+msgid "Home"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:393
+#: inc/class-tgm-plugin-activation.php:916
+#: inc/class-tgm-plugin-activation.php:2687
+#: inc/class-tgm-plugin-activation.php:3761
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:605
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:606
+msgid "Update Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1034
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1034
+#: inc/class-tgm-plugin-activation.php:1037
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1037
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1223
+#: inc/class-tgm-plugin-activation.php:3111
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+
+#: inc/class-tgm-plugin-activation.php:2119
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2420
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2423
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2440
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2443
+msgid "External Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2446
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2464
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2468
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2470
+msgid "Active"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2476
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2478
+msgid "Requires Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2480
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+
+#: inc/class-tgm-plugin-activation.php:2489
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+
+#: inc/class-tgm-plugin-activation.php:2537
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+
+#: inc/class-tgm-plugin-activation.php:2541
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+
+#: inc/class-tgm-plugin-activation.php:2545
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+
+#: inc/class-tgm-plugin-activation.php:2549
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2635
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2643
+msgid "Installed version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2651
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2663
+msgid "Available version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2687
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2702
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2703
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2704
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2708
+msgid "Version"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2709
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+
+#: inc/class-tgm-plugin-activation.php:2761
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+
+#: inc/class-tgm-plugin-activation.php:2766
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+
+#: inc/class-tgm-plugin-activation.php:2772
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2844
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2879
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2885
+msgid "Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2888
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2920
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2922
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2963
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2965
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3071
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3097
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3329
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+
+#: inc/class-tgm-plugin-activation.php:3676
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+
+#: inc/class-tgm-plugin-activation.php:3679
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/class-tgm-plugin-activation.php:3681
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3685
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/class-tgm-plugin-activation.php:3687
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3688
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+
+#: inc/class-tgm-plugin-activation.php:3690
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3693
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/class-tgm-plugin-activation.php:3695
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3696
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+
+#: inc/class-tgm-plugin-activation.php:3698
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/common/zyan-breadcrumb.php:22 inc/common/zyan-breadcrumb.php:25
+msgid "Blog"
+msgstr ""
+
+#: inc/common/zyan-breadcrumb.php:34 inc/common/zyan-breadcrumb.php:44
+msgid "Shop"
+msgstr ""
+
+#: inc/common/zyan-breadcrumb.php:36
+msgid "Course Details"
+msgstr ""
+
+#: inc/common/zyan-breadcrumb.php:38
+msgid "Courses"
+msgstr ""
+
+#: inc/common/zyan-breadcrumb.php:40
+msgid "Search Results for : "
+msgstr ""
+
+#: inc/common/zyan-breadcrumb.php:42
+msgid "Page not Found"
+msgstr ""
+
+#: inc/common/zyan-scrips.php:40
+msgctxt "Google font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/common/zyan-widgets.php:6
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/common/zyan-widgets.php:8
+msgid "Your Blog Widget."
+msgstr ""
+
+#: inc/kirki-customizer.php:21
+msgid "Select Form"
+msgstr ""
+
+#: inc/kirki-customizer.php:27
+msgid "No contact form found"
+msgstr ""
+
+#: inc/kirki-customizer.php:38
+msgid "Zyan Customizer"
+msgstr ""
+
+#: inc/kirki-customizer.php:42
+msgid "Side Info"
+msgstr ""
+
+#: inc/kirki-customizer.php:51
+msgid "Side Bar"
+msgstr ""
+
+#: inc/kirki-customizer.php:59
+msgid "Breadcrumb"
+msgstr ""
+
+#: inc/kirki-customizer.php:67
+msgid "Subscribe"
+msgstr ""
+
+#: inc/kirki-customizer.php:75
+msgid "Footer"
+msgstr ""
+
+#: inc/kirki-customizer.php:83
+msgid "Colors"
+msgstr ""
+
+#: inc/kirki-customizer.php:91
+msgid "Typography Setting"
+msgstr ""
+
+#: inc/kirki-customizer.php:106
+msgid "Preloader Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:111 inc/kirki-customizer.php:124
+#: inc/kirki-customizer.php:165 inc/kirki-customizer.php:210
+#: inc/kirki-customizer.php:256 inc/kirki-customizer.php:276
+#: inc/kirki-customizer.php:325 inc/kirki-customizer.php:407
+#: inc/kirki-customizer.php:449 inc/kirki-customizer.php:519
+msgid "Enable"
+msgstr ""
+
+#: inc/kirki-customizer.php:112 inc/kirki-customizer.php:125
+#: inc/kirki-customizer.php:166 inc/kirki-customizer.php:211
+#: inc/kirki-customizer.php:257 inc/kirki-customizer.php:277
+#: inc/kirki-customizer.php:326 inc/kirki-customizer.php:408
+#: inc/kirki-customizer.php:450 inc/kirki-customizer.php:520
+msgid "Disable"
+msgstr ""
+
+#: inc/kirki-customizer.php:119
+msgid "Cursor Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:132
+msgid "Logo"
+msgstr ""
+
+#: inc/kirki-customizer.php:142
+msgid "Header Secondary Logo"
+msgstr ""
+
+#: inc/kirki-customizer.php:160
+msgid "About/Bio Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:173
+msgid "About/Bio Title"
+msgstr ""
+
+#: inc/kirki-customizer.php:189
+msgid "About/Bio Text"
+msgstr ""
+
+#: inc/kirki-customizer.php:205
+msgid "Contact From Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:218
+msgid "Contact Title"
+msgstr ""
+
+#: inc/kirki-customizer.php:234
+msgid "Contact Select"
+msgstr ""
+
+#: inc/kirki-customizer.php:236 inc/kirki-customizer.php:351
+msgid "Choose an option"
+msgstr ""
+
+#: inc/kirki-customizer.php:251
+msgid "Logo Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:271
+msgid "Breadcrumb Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:284 inc/kirki-customizer.php:415
+msgid "Breadcrumb Background"
+msgstr ""
+
+#: inc/kirki-customizer.php:320
+msgid "Subscribe Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:333
+msgid "Title"
+msgstr ""
+
+#: inc/kirki-customizer.php:349
+msgid "Subscribe from Select"
+msgstr ""
+
+#: inc/kirki-customizer.php:366
+msgid "subscribe Background"
+msgstr ""
+
+#: inc/kirki-customizer.php:402
+msgid "Footer Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:444
+msgid "Footer Info Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:457
+msgid "Footer Info Repeater"
+msgstr ""
+
+#: inc/kirki-customizer.php:462 inc/kirki-customizer.php:548
+msgid "Your Custom Value"
+msgstr ""
+
+#: inc/kirki-customizer.php:465
+msgid "Add new Info"
+msgstr ""
+
+#: inc/kirki-customizer.php:468 template-parts/footer.php:4
+msgid "Address"
+msgstr ""
+
+#: inc/kirki-customizer.php:469 template-parts/footer.php:5
+msgid "2118 Thornridge Cir. Syracuse, Connecticut 35624"
+msgstr ""
+
+#: inc/kirki-customizer.php:473 template-parts/footer.php:9
+msgid "Lets talk us"
+msgstr ""
+
+#: inc/kirki-customizer.php:474 template-parts/footer.php:10
+msgid "<a href=\"callto:1234567890\">(603) 555-0123</a> <a href=\"callto:1234567890\">(603) 555-0123</a>"
+msgstr ""
+
+#: inc/kirki-customizer.php:478 template-parts/footer.php:14
+msgid "Send us email"
+msgstr ""
+
+#: inc/kirki-customizer.php:479 template-parts/footer.php:15
+msgid "<a href=\"mailto:example@gmail.com\">deanna.curtis@example.com</a><a href=\"mailto:example@gmail.com\">curtis@example.com</a>"
+msgstr ""
+
+#: inc/kirki-customizer.php:486
+msgid "Info Title"
+msgstr ""
+
+#: inc/kirki-customizer.php:491
+msgid "Description"
+msgstr ""
+
+#: inc/kirki-customizer.php:496
+msgid "Upload Icon"
+msgstr ""
+
+#: inc/kirki-customizer.php:497
+msgid "Upload SVG Icon"
+msgstr ""
+
+#: inc/kirki-customizer.php:514
+msgid "Footer Copyright Swicher"
+msgstr ""
+
+#: inc/kirki-customizer.php:527
+msgid "Copyright text"
+msgstr ""
+
+#: inc/kirki-customizer.php:543
+msgid "Footer Menu Repeater"
+msgstr ""
+
+#: inc/kirki-customizer.php:551
+msgid "Add new Menu"
+msgstr ""
+
+#: inc/kirki-customizer.php:554 template-parts/footer.php:22
+msgid "Trams & Condition"
+msgstr ""
+
+#: inc/kirki-customizer.php:558 template-parts/footer.php:26
+msgid "Privacy Policy"
+msgstr ""
+
+#: inc/kirki-customizer.php:562 template-parts/footer.php:30
+msgid "Sitemap"
+msgstr ""
+
+#: inc/kirki-customizer.php:569
+msgid "Text"
+msgstr ""
+
+#: inc/kirki-customizer.php:574
+msgid "Button URL"
+msgstr ""
+
+#: inc/kirki-customizer.php:598
+msgid "Primary Color"
+msgstr ""
+
+#: inc/kirki-customizer.php:599
+msgid "This is a Theme Primary color control."
+msgstr ""
+
+#: inc/kirki-customizer.php:613
+msgid "Background Color"
+msgstr ""
+
+#: inc/kirki-customizer.php:614
+msgid "This is a Theme background color control."
+msgstr ""
+
+#: inc/kirki-customizer.php:629
+msgid "background Color 2"
+msgstr ""
+
+#: inc/kirki-customizer.php:630
+msgid "This is a Theme background color 2 control."
+msgstr ""
+
+#: inc/kirki-customizer.php:645
+msgid "Text Color"
+msgstr ""
+
+#: inc/kirki-customizer.php:646
+msgid "This is a Theme Text color control."
+msgstr ""
+
+#: inc/kirki-customizer.php:661
+msgid "White Color"
+msgstr ""
+
+#: inc/kirki-customizer.php:662
+msgid "This is a Theme White color control."
+msgstr ""
+
+#: inc/kirki-customizer.php:677
+msgid "Black Color"
+msgstr ""
+
+#: inc/kirki-customizer.php:678
+msgid "This is a Theme Black color control."
+msgstr ""
+
+#: inc/kirki-customizer.php:700
+msgid "Body Font Control"
+msgstr ""
+
+#: inc/kirki-customizer.php:724
+msgid "H1 Font Control"
+msgstr ""
+
+#: inc/kirki-customizer.php:748
+msgid "H2 Font Control"
+msgstr ""
+
+#: inc/kirki-customizer.php:772
+msgid "H3 Font Control"
+msgstr ""
+
+#: inc/kirki-customizer.php:796
+msgid "H4 Font Control"
+msgstr ""
+
+#: inc/kirki-customizer.php:820
+msgid "H5 Font Control"
+msgstr ""
+
+#: inc/kirki-customizer.php:844
+msgid "H6 Font Control"
+msgstr ""
+
+#: inc/template-functions.php:16
+msgid "Search"
+msgstr ""
+
+#: search.php:32
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:34
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-page.php:5
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:9
+msgid "Page"
+msgstr ""
+
+#: template-parts/content.php:33
+msgid "Share :"
+msgstr ""
+
+#: template-parts/content.php:51
+msgid "Tags :"
+msgstr ""
+
+#: template-parts/content.php:79
+msgid "Previous post"
+msgstr ""
+
+#: template-parts/content.php:87
+msgid "Next post"
+msgstr ""
+
+#: template-parts/footer.php:40
+msgid "© CodeeFly 2023 | All Rights Reserved"
+msgstr ""
+
+#: template-parts/footer.php:52 template-parts/footer.php:55
+msgid "footer"
+msgstr ""
+
+#: template-parts/header.php:6
+msgid "About us"
+msgstr ""
+
+#: template-parts/header.php:7
+msgid "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam laboris."
+msgstr ""
+
+#: template-parts/header.php:9
+msgid "Get In Touch"
+msgstr ""
+
+#: template-parts/header.php:19 template-parts/header.php:42
+msgid "ZYAN"
+msgstr ""
+
+#: template-parts/preloader.php:10
+msgid "Loading"
+msgstr ""
+
+#: template-parts/subscribe.php:2
+msgid "SUBSCRIBE MY NEWSLETTER"
+msgstr ""
+#. Theme Name of the plugin/theme
+msgid "Zyan"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://wp.shsarker.xyz/zyan/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Zyan – Personal Portfolio WordPress Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Codeefly"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://themeforest.net/user/codeefly"
+msgstr ""
