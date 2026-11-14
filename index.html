@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Azharmadani Syed · Data Scientist</title>
+<meta name="description" content="Azharmadani Syed — Data Scientist and Senior Analytics Consultant. Experimentation, machine learning, and fraud analytics.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#191919; --surface:#202020; --card:#252525; --card-hover:#2c2c2c;
+    --border:#2f2f2f; --text:#e3e3e3; --muted:#9b9b9b; --faint:#6f6f6f;
+    --btn:#4a2c38; --btn-hover:#5a3544; --accent:#e58fb0; --tag:#373737;
+    --radius:6px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+
+  /* top bar */
+  .topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:12px;height:44px;padding:0 16px;background:rgba(25,25,25,.92);backdrop-filter:blur(8px);font-size:14px}
+  .topbar .crumb{display:flex;align-items:center;gap:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .topbar nav{display:flex;gap:4px}
+  @media(max-width:480px){.topbar .crumb{display:none}.topbar{justify-content:center}}
+  .topbar nav a{text-decoration:none;color:var(--muted);padding:4px 8px;border-radius:4px}
+  .topbar nav a:hover{background:var(--card);color:var(--text)}
+
+  /* cover */
+  .cover{height:30vh;min-height:200px;max-height:280px;position:relative;overflow:hidden;
+    background:
+      radial-gradient(1200px 300px at 20% 120%, rgba(229,143,176,.35), transparent 60%),
+      radial-gradient(900px 300px at 85% -20%, rgba(90,140,255,.35), transparent 60%),
+      linear-gradient(135deg,#1d2433 0%,#2a1f2e 55%,#3a2430 100%)}
+  .cover svg{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+  .cover img{width:100%;height:100%;object-fit:cover}
+
+  .page{max-width:960px;margin:0 auto;padding:0 16px 64px}
+  @media(min-width:760px){.page{padding:0 48px 80px}}
+
+  .avatar{width:124px;height:124px;margin-top:-62px;position:relative;border-radius:8px;overflow:hidden;
+    background:linear-gradient(140deg,#5b6cff,#c06c9a);display:grid;place-items:center;
+    font-size:44px;font-weight:700;color:#fff;letter-spacing:1px;box-shadow:0 0 0 4px var(--bg)}
+  .avatar img{width:100%;height:100%;object-fit:cover}
+
+  h1{font-size:40px;line-height:1.2;font-weight:700;margin:28px 0 6px}
+  @media(max-width:520px){h1{font-size:32px}}
+  .tagline{font-weight:600;color:var(--text);margin:0 0 28px}
+
+  /* link buttons */
+  .links{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:40px}
+  @media(max-width:640px){.links{grid-template-columns:repeat(2,1fr)}}
+  .links a{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 10px;background:var(--btn);border-radius:var(--radius);text-decoration:none;font-weight:500;transition:background .15s}
+  .links a:hover{background:var(--btn-hover)}
+  .links svg{width:18px;height:18px;flex:none}
+
+  /* two-column */
+  .cols{display:grid;grid-template-columns:1fr;gap:40px}
+  @media(min-width:860px){.cols{grid-template-columns:240px 1fr;gap:36px}}
+  h2{font-size:22px;font-weight:700;margin:0 0 14px;line-height:1.3}
+  .about p{margin:0 0 16px;color:#d4d4d4}
+  .about .callout{background:var(--card);border-radius:var(--radius);padding:14px;display:flex;gap:10px;font-size:14px;color:var(--muted)}
+  .about .stat{display:flex;flex-direction:column;gap:10px;margin:22px 0}
+  .about .stat div{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px}
+  .about .stat b{display:block;font-size:20px;color:var(--text)}
+  .about .stat span{font-size:13px;color:var(--muted)}
+
+  /* tabs + gallery */
+  .tabs{display:flex;gap:4px;border-bottom:1px solid var(--border);margin-bottom:16px;overflow-x:auto}
+  .tab{appearance:none;border:0;background:none;color:var(--muted);font:inherit;font-size:14px;padding:6px 10px 8px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;display:flex;gap:6px;align-items:center;white-space:nowrap}
+  .tab[aria-selected="true"]{color:var(--text);border-bottom-color:var(--text);font-weight:500}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+  .gallery[hidden]{display:none}
+  .card{background:var(--card);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:background .15s, transform .15s;box-shadow:0 0 0 1px rgba(255,255,255,.04)}
+  a.card:hover{background:var(--card-hover);transform:translateY(-2px)}
+  .thumb{height:150px;position:relative;display:flex;align-items:flex-end;padding:14px;overflow:hidden}
+  .thumb .emoji{font-size:44px;position:absolute;right:16px;top:12px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.35))}
+  .thumb .big{font-size:22px;font-weight:700;line-height:1.15;color:#fff;max-width:75%;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+  .card .body{padding:12px 14px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .card .title{font-weight:600;font-size:14.5px;display:flex;gap:8px;align-items:flex-start;line-height:1.35}
+  .card .desc{font-size:13px;color:var(--muted);line-height:1.5}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+  .tags span{background:var(--tag);font-size:11.5px;padding:1px 7px;border-radius:3px;color:#cfcfcf}
+
+  .g1{background:linear-gradient(135deg,#0f4c81,#3c9ad0)}
+  .g2{background:linear-gradient(135deg,#7a3e00,#e0912f)}
+  .g3{background:linear-gradient(135deg,#6b1d3a,#d14d72)}
+  .g4{background:linear-gradient(135deg,#1b5e3b,#4cbf86)}
+  .g5{background:linear-gradient(135deg,#3d2a7a,#8b6cf0)}
+  .g6{background:linear-gradient(135deg,#333,#777)}
+  .g7{background:linear-gradient(135deg,#123c3f,#2fa3a8)}
+  .thumb::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 28px),repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 28px);pointer-events:none}
+
+  section{scroll-margin-top:60px}
+  .divider{height:1px;background:var(--border);margin:56px 0 40px}
+
+  /* companies */
+  .lead{color:var(--muted);margin:-6px 0 18px}
+  .orgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+  .org .logo{height:150px;background:#f4f4f2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#1a1a1a;text-align:center;padding:12px}
+  .org .wordmark{font-weight:800;font-size:24px;line-height:1.1;letter-spacing:-.3px}
+  .org .years{font-weight:700;font-size:16px}
+  .wm-tiger{color:#f26b21}.wm-uh{color:#c8102e}.wm-vedanta{color:#0d3b7a}.wm-jntu{color:#1c4f8f}
+
+  /* skills */
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+  .skill{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+  .skill h3{margin:0 0 10px;font-size:15px;display:flex;gap:8px;align-items:center}
+  .skill .tags span{font-size:12.5px;padding:2px 8px}
+
+  /* contact */
+  .contact{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
+  @media(min-width:760px){.contact{grid-template-columns:1fr 1fr;gap:36px}}
+  .contact .stack{display:flex;flex-direction:column;gap:12px}
+  .contact .stack a{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--btn);border-radius:var(--radius);text-decoration:none;word-break:break-all}
+  .contact .stack a:hover{background:var(--btn-hover)}
+  .contact .stack svg{width:18px;height:18px;flex:none}
+  .quote{background:var(--card);border-radius:var(--radius);padding:22px;color:var(--muted);font-size:14px}
+  .quote b{color:var(--text)}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--border);color:var(--faint);font-size:13px}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="crumb"><span aria-hidden="true">📊</span> Hi👋, I'm Azhar</div>
+  <nav aria-label="Sections">
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- To use your own banner: put an image at assets/cover.jpg and replace the <svg> below with
+     <img src="assets/cover.jpg" alt=""> -->
+<div class="cover" aria-hidden="true">
+  <svg viewBox="0 0 1200 280" preserveAspectRatio="none">
+    <g fill="none" stroke="#fff" stroke-width="1.4" opacity=".7">
+      <path d="M0 220 C120 200 180 150 300 170 S480 230 600 160 S800 60 920 110 S1100 90 1200 40"/>
+      <path d="M0 250 C140 240 220 210 340 215 S520 250 640 205 S820 150 940 175 S1120 150 1200 120" opacity=".5"/>
+    </g>
+    <g fill="#fff" opacity=".35">
+      <rect x="80" y="200" width="22" height="80"/><rect x="110" y="180" width="22" height="100"/><rect x="140" y="210" width="22" height="70"/>
+      <rect x="1000" y="150" width="22" height="130"/><rect x="1030" y="120" width="22" height="160"/><rect x="1060" y="170" width="22" height="110"/><rect x="1090" y="95" width="22" height="185"/>
+    </g>
+    <g fill="#fff" opacity=".8">
+      <circle cx="300" cy="170" r="4"/><circle cx="600" cy="160" r="4"/><circle cx="920" cy="110" r="4"/><circle cx="1200" cy="40" r="4"/>
+    </g>
+  </svg>
+</div>
+
+<main class="page">
+  <!-- To use your photo: put it at assets/avatar.jpg and replace "AS" with <img src="assets/avatar.jpg" alt="Azharmadani Syed"> -->
+  <div class="avatar" role="img" aria-label="Azharmadani Syed">AS</div>
+
+  <h1>Hi👋, I'm Azhar</h1>
+  <p class="tagline">Turning messy data into decisions: experimentation, machine learning, and fraud analytics</p>
+
+  <div class="links">
+    <a href="Azharmadani_Syed_Resume.pdf" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>Resume</a>
+    <a href="https://linkedin.com/in/azhar-madani" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="#4c9be8"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+    <a href="https://github.com/AzharMadani" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>GitHub</a>
+    <a href="mailto:sazharmadani@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#e8786b" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Email</a>
+  </div>
+
+  <div class="cols">
+    <aside class="about">
+      <h2>A little about me</h2>
+      <p>I'm a Senior Analytics Consultant at Tiger Analytics in Chicago, where I lead customer growth, campaign, and fraud analytics for a 23M+ customer card portfolio at Discover.</p>
+      <p>I've spent 6+ years working with data, from SQL window functions on aluminium smelting potlines to A/B tests on 6M users and fraud rules that cut third-party fraud by ~12%.</p>
+      <p>I hold an MS in Engineering Data Science from the University of Houston, where I built ML models to predict spinal cord injury outcomes and published the work in a peer-reviewed journal.</p>
+      <p>These days I'm also building agentic AI tools with LLMs, LangGraph, and MCP.</p>
+      <div class="stat">
+        <div><b>$4.5M</b><span>annual avoidable dispute cost sized</span></div>
+        <div><b>~12%</b><span>reduction in third-party fraud</span></div>
+        <div><b>AUC 0.96</b><span>published SCI outcome model</span></div>
+      </div>
+      <div class="callout"><span aria-hidden="true">💡</span><span>Looking for someone who can design the experiment, build the model, and explain it to the room? Let's talk.</span></div>
+    </aside>
+
+    <section id="work">
+      <h2>Let's take a walk through my work</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" aria-controls="tab-ml" id="t-ml">🤖 Machine Learning</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-research" id="t-research">📄 Research</button>
+      </div>
+
+      <div class="gallery" id="tab-ml" role="tabpanel" aria-labelledby="t-ml">
+        <a class="card" href="https://github.com/AzharMadani/Customer-Churn-Prediction" target="_blank" rel="noopener">
+          <div class="thumb g1"><span class="emoji">📉</span><span class="big">Customer Churn</span></div>
+          <div class="body">
+            <div class="title">🔁 Customer Churn Prediction</div>
+            <div class="desc">Predicted churn for 51K telecom customers across 58 features. Compared logistic regression, random forest, XGBoost, a voting ensemble, and a neural network, using Lasso, forward selection, and RFE for feature selection.</div>
+            <div class="tags"><span>Python</span><span>XGBoost</span><span>Feature selection</span><span>Tuning</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/AzharMadani/Predicting-bottom-hole-temperature" target="_blank" rel="noopener">
+          <div class="thumb g2"><span class="emoji">🌡️</span><span class="big">Bottom-Hole Temperature</span></div>
+          <div class="body">
+            <div class="title">🛢️ Predicting Bottom-Hole Temperature</div>
+            <div class="desc">Regression models on 15.6K oil and gas well records, joined with production history, to predict bottom-hole temperature. Best models reached a test R² of about 0.97.</div>
+            <div class="tags"><span>Regression</span><span>EDA</span><span>Energy</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/AzharMadani/Predictive-Modeling-for-Hepatitis-C-Virus-Detection-in-Egyptian-Patients" target="_blank" rel="noopener">
+          <div class="thumb g3"><span class="emoji">🧬</span><span class="big">Hepatitis C Detection</span></div>
+          <div class="body">
+            <div class="title">🏥 Predictive Modeling for Hepatitis C Detection</div>
+            <div class="desc">Classified Hepatitis C stages for 1,385 Egyptian patients from 28 clinical and lab features, with skew handling, preprocessing, and a comparison of several classifiers.</div>
+            <div class="tags"><span>Classification</span><span>Healthcare</span><span>scikit-learn</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/AzharMadani/NLP" target="_blank" rel="noopener">
+          <div class="thumb g4"><span class="emoji">💬</span><span class="big">Review Ratings NLP</span></div>
+          <div class="body">
+            <div class="title">📝 Review Rating Prediction with NLP</div>
+            <div class="desc">Multiclass, multilabel classification of customer review ratings. Reduced high-dimensional text features by limiting to the most frequent terms to balance speed and accuracy.</div>
+            <div class="tags"><span>NLP</span><span>Text classification</span><span>Python</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/AzharMadani/Clustering" target="_blank" rel="noopener">
+          <div class="thumb g5"><span class="emoji">🔵</span><span class="big">Clustering &amp; PCA</span></div>
+          <div class="body">
+            <div class="title">🧩 Clustering Analysis and PCA</div>
+            <div class="desc">Segmentation with K-Means, DBSCAN, and hierarchical clustering. Chose K with elbow and silhouette scores and used PCA to reduce dimensions before modeling.</div>
+            <div class="tags"><span>Unsupervised</span><span>K-Means</span><span>DBSCAN</span><span>PCA</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/AzharMadani/Classification-Algorithms" target="_blank" rel="noopener">
+          <div class="thumb g7"><span class="emoji">🖼️</span><span class="big">Classification Projects</span></div>
+          <div class="body">
+            <div class="title">🧠 Deep Learning &amp; Classification</div>
+            <div class="desc">Seven projects, including COVID X-ray and face image classification with CNNs, MNIST digit recognition, forest type, disease, salary, and wine quality prediction.</div>
+            <div class="tags"><span>CNN</span><span>TensorFlow/Keras</span><span>Computer vision</span></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery" id="tab-research" role="tabpanel" aria-labelledby="t-research" hidden>
+        <div class="card">
+          <div class="thumb g3"><span class="emoji">🫀</span><span class="big">SCI Outcomes from HRV</span></div>
+          <div class="body">
+            <div class="title">📄 Predicting Spinal Cord Injury Outcomes from Heart-Rate Variability</div>
+            <div class="desc">Published in the <i>American Journal of Physical Medicine &amp; Rehabilitation</i>. A feedforward neural network on heart-rate variability features predicts complete vs. incomplete spinal cord injury with 86.67% accuracy and an AUC of 0.96.</div>
+            <div class="tags"><span>Neural networks</span><span>Healthcare</span><span>Peer-reviewed</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb g1"><span class="emoji">🔬</span><span class="big">SCI ML Pipelines</span></div>
+          <div class="body">
+            <div class="title">🧪 ML Pipelines for SCI Research (University of Houston)</div>
+            <div class="desc">Random forest, XGBoost, and neural network pipelines that predicted spinal cord injury outcomes with 92% accuracy under 5-fold cross-validation. Feature selection raised accuracy by 28%.</div>
+            <div class="tags"><span>Random forest</span><span>XGBoost</span><span>Cross-validation</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="divider"></div>
+
+  <section id="experience">
+    <h2>Companies</h2>
+    <p class="lead">I had the privilege of working for or studying at</p>
+    <div class="orgs">
+      <div class="card org">
+        <div class="logo"><span class="wordmark wm-tiger">TIGER<br>ANALYTICS</span><span class="years">2025 – Present</span></div>
+        <div class="body"><div class="title">📄 Senior Analytics Consultant</div><div class="desc">Chicago, IL · Discover card growth, campaign, and fraud analytics</div></div>
+      </div>
+      <div class="card org">
+        <div class="logo"><span class="wordmark wm-uh">UNIVERSITY of<br>HOUSTON</span><span class="years">2023 – 2024</span></div>
+        <div class="body"><div class="title">📄 Data Scientist (Research Assistant)</div><div class="desc">Houston, TX · ML research on spinal cord injury outcomes</div></div>
+      </div>
+      <div class="card org">
+        <div class="logo"><span class="wordmark wm-uh">UNIVERSITY of<br>HOUSTON</span><span class="years">Class of 2024</span></div>
+        <div class="body"><div class="title">🎓 MS Engineering Data Science</div><div class="desc">Graduated December 2024</div></div>
+      </div>
+      <div class="card org">
+        <div class="logo"><span class="wordmark wm-tiger">TIGER<br>ANALYTICS</span><span class="years">2022 – 2023</span></div>
+        <div class="body"><div class="title">📄 Senior Data Science Analyst</div><div class="desc">Remote · Retail and CPG analytics, MARS product recommendations</div></div>
+      </div>
+      <div class="card org">
+        <div class="logo"><span class="wordmark wm-vedanta">VEDANTA</span><span class="years">2019 – 2022</span></div>
+        <div class="body"><div class="title">📄 Data Analyst</div><div class="desc">Aluminium Business · Process analytics for smelting potlines</div></div>
+      </div>
+      <div class="card org">
+        <div class="logo"><span class="wordmark wm-jntu">JNTU</span><span class="years">Class of 2019</span></div>
+        <div class="body"><div class="title">🎓 B.Tech Engineering</div><div class="desc">Jawaharlal Nehru Technological University</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill"><h3>📈 Statistics &amp; ML</h3><div class="tags"><span>Predictive modeling</span><span>Hypothesis testing</span><span>A/B &amp; holdout testing</span><span>Experimental design</span><span>Random forest</span><span>XGBoost</span><span>Neural networks</span><span>Recommender systems</span><span>Cross-validation</span><span>ROC/AUC</span></div></div>
+      <div class="skill"><h3>✨ GenAI &amp; LLMs</h3><div class="tags"><span>Generative AI</span><span>LLMs</span><span>RAG</span><span>Agentic AI</span><span>Multi-agent systems</span><span>LangChain</span><span>LangGraph</span><span>Vector databases</span><span>MCP</span></div></div>
+      <div class="skill"><h3>🛠️ Tools</h3><div class="tags"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>TensorFlow/Keras</span><span>SQL</span><span>Snowflake</span><span>PySpark</span><span>Databricks</span><span>R</span><span>SAS</span><span>Tableau</span><span>Power BI</span><span>Git</span></div></div>
+      <div class="skill"><h3>🤝 Analytics &amp; Consulting</h3><div class="tags"><span>Stakeholder management</span><span>Client engagement</span><span>Data storytelling</span><span>KPI design</span><span>Root cause analysis</span></div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="contact" class="contact">
+    <div>
+      <h2>Let's build something data-driven together</h2>
+      <div class="stack">
+        <a href="mailto:sazharmadani@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>sazharmadani@gmail.com</a>
+        <a href="https://linkedin.com/in/azhar-madani" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#4c9be8"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+        <a href="https://github.com/AzharMadani" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>GitHub</a>
+      </div>
+    </div>
+    <div class="quote">📍 Based in <b>Chicago, IL</b>.<br><br>Open to <b>Data Scientist</b>, <b>Senior Data Scientist</b>, and <b>ML / Analytics</b> roles in experimentation, fraud and risk, and applied AI.</div>
+  </section>
+
+  <footer>© 2026 Azharmadani Syed</footer>
+</main>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => {
+      const on = x === t;
+      x.setAttribute('aria-selected', on);
+      document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+    });
+  }));
+</script>
+</body>
+</html>
