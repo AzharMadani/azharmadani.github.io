@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Azharmadani Syed · Data Scientist</title>
-<meta name="description" content="Azharmadani Syed — Data Scientist and Senior Analytics Consultant. Experimentation, machine learning, and fraud analytics.">
+<meta name="description" content="Azharmadani Syed, Data Scientist in banking and cards: experimentation, fraud and disputes analytics, and machine learning.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -36,7 +36,8 @@
       radial-gradient(900px 300px at 85% -20%, rgba(90,140,255,.35), transparent 60%),
       linear-gradient(135deg,#1d2433 0%,#2a1f2e 55%,#3a2430 100%)}
   .cover svg{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
-  .cover img{width:100%;height:100%;object-fit:cover}
+  .cover img{width:100%;height:100%;object-fit:cover;object-position:60% center}
+  @media(max-width:640px){.cover{height:auto;min-height:0;aspect-ratio:3/1}.avatar{width:96px;height:96px;margin-top:-40px}}
 
   .page{max-width:960px;margin:0 auto;padding:0 16px 64px}
   @media(min-width:760px){.page{padding:0 48px 80px}}
@@ -59,6 +60,7 @@
 
   /* two-column */
   .cols{display:grid;grid-template-columns:1fr;gap:40px}
+  .cols > *{min-width:0}
   @media(min-width:860px){.cols{grid-template-columns:240px 1fr;gap:36px}}
   h2{font-size:22px;font-weight:700;margin:0 0 14px;line-height:1.3}
   .about p{margin:0 0 16px;color:#d4d4d4}
@@ -135,30 +137,13 @@
   </nav>
 </header>
 
-<!-- To use your own banner: put an image at assets/cover.jpg and replace the <svg> below with
-     <img src="assets/cover.jpg" alt=""> -->
-<div class="cover" aria-hidden="true">
-  <svg viewBox="0 0 1200 280" preserveAspectRatio="none">
-    <g fill="none" stroke="#fff" stroke-width="1.4" opacity=".7">
-      <path d="M0 220 C120 200 180 150 300 170 S480 230 600 160 S800 60 920 110 S1100 90 1200 40"/>
-      <path d="M0 250 C140 240 220 210 340 215 S520 250 640 205 S820 150 940 175 S1120 150 1200 120" opacity=".5"/>
-    </g>
-    <g fill="#fff" opacity=".35">
-      <rect x="80" y="200" width="22" height="80"/><rect x="110" y="180" width="22" height="100"/><rect x="140" y="210" width="22" height="70"/>
-      <rect x="1000" y="150" width="22" height="130"/><rect x="1030" y="120" width="22" height="160"/><rect x="1060" y="170" width="22" height="110"/><rect x="1090" y="95" width="22" height="185"/>
-    </g>
-    <g fill="#fff" opacity=".8">
-      <circle cx="300" cy="170" r="4"/><circle cx="600" cy="160" r="4"/><circle cx="920" cy="110" r="4"/><circle cx="1200" cy="40" r="4"/>
-    </g>
-  </svg>
-</div>
+<div class="cover"><img src="assets/cover.jpg" alt="Data Science &amp; Analytics: Financial Services, Experimentation, AI"></div>
 
 <main class="page">
-  <!-- To use your photo: put it at assets/avatar.jpg and replace "AS" with <img src="assets/avatar.jpg" alt="Azharmadani Syed"> -->
-  <div class="avatar" role="img" aria-label="Azharmadani Syed">AS</div>
+  <div class="avatar"><img src="assets/avatar.jpg" alt="Azharmadani Syed"></div>
 
   <h1>Hi👋, I'm Azhar</h1>
-  <p class="tagline">Turning messy data into decisions: experimentation, machine learning, and fraud analytics</p>
+  <p class="tagline">Turning card data into revenue and risk decisions</p>
 
   <div class="links">
     <a href="Azharmadani_Syed_Resume.pdf" target="_blank" rel="noopener">
@@ -174,34 +159,83 @@
   <div class="cols">
     <aside class="about">
       <h2>A little about me</h2>
-      <p>I'm a Senior Analytics Consultant at Tiger Analytics in Chicago, where I lead customer growth, campaign, and fraud analytics for a 23M+ customer card portfolio at Discover.</p>
-      <p>I've spent 6+ years working with data, from SQL window functions on aluminium smelting potlines to A/B tests on 6M users and fraud rules that cut third-party fraud by ~12%.</p>
-      <p>I hold an MS in Engineering Data Science from the University of Houston, where I built ML models to predict spinal cord injury outcomes and published the work in a peer-reviewed journal.</p>
-      <p>These days I'm also building agentic AI tools with LLMs, LangGraph, and MCP.</p>
+      <p>I'm a data scientist who works where credit cards, customers, and risk meet. As a Senior Analytics Consultant at Tiger Analytics in Chicago, I lead customer growth, campaign, and fraud &amp; disputes analytics for Discover's 23M+ cardholder portfolio.</p>
+      <p>My day-to-day is the full card lifecycle: designing A/B and holdout tests for activation and engagement campaigns, measuring incremental lift and ROI, building fraud rules, and tracing dispute losses back to the process that caused them.</p>
+      <p>I like problems where the answer has a dollar sign on it, and where I have to defend the logic to Product, Compliance, and senior leaders, not just ship a model.</p>
+      <p>I hold an MS in Engineering Data Science from the University of Houston, published ML research in a peer-reviewed journal, and I'm now building agentic AI tools for financial services with LLMs, LangGraph, and MCP.</p>
       <div class="stat">
-        <div><b>$4.5M</b><span>annual avoidable dispute cost sized</span></div>
+        <div><b>$2M</b><span>in unnecessary refunds avoided</span></div>
         <div><b>~12%</b><span>reduction in third-party fraud</span></div>
-        <div><b>AUC 0.96</b><span>published SCI outcome model</span></div>
+        <div><b>6M</b><span>users in a single card A/B test</span></div>
       </div>
-      <div class="callout"><span aria-hidden="true">💡</span><span>Looking for someone who can design the experiment, build the model, and explain it to the room? Let's talk.</span></div>
+      <div class="callout"><span aria-hidden="true">💡</span><span>Looking for a data scientist for card, payments, fraud, or credit risk? Let's talk.</span></div>
     </aside>
 
     <section id="work">
       <h2>Let's take a walk through my work</h2>
       <div class="tabs" role="tablist">
-        <button class="tab" role="tab" aria-selected="true" aria-controls="tab-ml" id="t-ml">🤖 Machine Learning</button>
+        <button class="tab" role="tab" aria-selected="true" aria-controls="tab-bank" id="t-bank">💳 Banking &amp; Cards</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-ml" id="t-ml">🤖 Machine Learning</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="tab-research" id="t-research">📄 Research</button>
       </div>
 
-      <div class="gallery" id="tab-ml" role="tabpanel" aria-labelledby="t-ml">
-        <a class="card" href="https://github.com/AzharMadani/Customer-Churn-Prediction" target="_blank" rel="noopener">
-          <div class="thumb g1"><span class="emoji">📉</span><span class="big">Customer Churn</span></div>
+      <div class="gallery" id="tab-bank" role="tabpanel" aria-labelledby="t-bank">
+        <div class="card">
+          <div class="thumb g1"><span class="emoji">✉️</span><span class="big">6M-User Email A/B Test</span></div>
           <div class="body">
-            <div class="title">🔁 Customer Churn Prediction</div>
-            <div class="desc">Predicted churn for 51K telecom customers across 58 features. Compared logistic regression, random forest, XGBoost, a voting ensemble, and a neural network, using Lasso, forward selection, and RFE for feature selection.</div>
-            <div class="tags"><span>Python</span><span>XGBoost</span><span>Feature selection</span><span>Tuning</span></div>
+            <div class="title">🧪 Card Engagement Experiment</div>
+            <div class="desc">Designed and read out a 6M-cardholder A/B test on email experiences, checking significance and sizing impact. The winning variant drove a $394 lift in annual sales and 5.9 more transactions per active user.</div>
+            <div class="tags"><span>A/B testing</span><span>Experimental design</span><span>Card growth</span></div>
           </div>
-        </a>
+        </div>
+        <div class="card">
+          <div class="thumb g3"><span class="emoji">🛡️</span><span class="big">Third-Party Fraud Rules</span></div>
+          <div class="body">
+            <div class="title">🚨 Card Fraud Rule Strategy</div>
+            <div class="desc">Designed and implemented 10+ SAS fraud rules on address verification, identity mismatches, and merchant velocity by MCC, cutting third-party fraud on card transactions by ~12%.</div>
+            <div class="tags"><span>Fraud</span><span>SAS</span><span>Rule design</span><span>MCC</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb g2"><span class="emoji">⚖️</span><span class="big">Dispute Routing Loss</span></div>
+          <div class="body">
+            <div class="title">🔍 Misrouted "Does Not Recognize" Disputes</div>
+            <div class="desc">Joined intake channel, routing, and case lifecycle data in Snowflake to size ~$4.5M a year in avoidable cost from misrouted DNR disputes, 30 to 40% of which turned out to be fraud.</div>
+            <div class="tags"><span>Disputes</span><span>Snowflake SQL</span><span>Root cause</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb g4"><span class="emoji">💵</span><span class="big">Refund Remediation</span></div>
+          <div class="body">
+            <div class="title">✅ Targeted Customer Remediation</div>
+            <div class="desc">Narrowed 300K potentially impacted customers to ~60K truly harmed accounts by matching cases to chargeback credits, letters, and network reason codes, avoiding ~$2M in unnecessary refunds. Defended each rule to Compliance.</div>
+            <div class="tags"><span>Compliance</span><span>Chargebacks</span><span>SQL</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb g5"><span class="emoji">📈</span><span class="big">Campaign Incrementality</span></div>
+          <div class="body">
+            <div class="title">🎯 Post-Campaign Lift &amp; ROI Framework</div>
+            <div class="desc">Built a reusable framework to measure incremental lift and ROI, and sized A/B and holdout tests for paid media, email, and card reissue campaigns aimed at activation. Closed email-to-web attribution gaps with Adobe Analytics, finding the segments behind a 4% revenue lift.</div>
+            <div class="tags"><span>Holdout tests</span><span>Attribution</span><span>Adobe Analytics</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb g7"><span class="emoji">🔄</span><span class="big">Account Migration Funnel</span></div>
+          <div class="body">
+            <div class="title">📱 Profile Update Conversion Funnel</div>
+            <div class="desc">Defined web and mobile funnel metrics with Product and Engineering during a multi-million-account migration. Found ~30% of banner engagers never saved their update, and the fixes raised the update rate 18%.</div>
+            <div class="tags"><span>Funnel analytics</span><span>Product</span><span>Digital banking</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb g6"><span class="emoji">📊</span><span class="big">Fraud &amp; Disputes Dashboards</span></div>
+          <div class="body">
+            <div class="title">🖥️ Executive Fraud &amp; Disputes Reporting</div>
+            <div class="desc">SQL pipelines and 5+ Tableau dashboards for senior managers covering open disputes, fraud rate, fraud loss by reason code, and resolution time, replacing manual reporting.</div>
+            <div class="tags"><span>Tableau</span><span>SQL pipelines</span><span>KPI design</span></div>
+          </div>
+        </div>
         <a class="card" href="https://github.com/AzharMadani/Predicting-bottom-hole-temperature" target="_blank" rel="noopener">
           <div class="thumb g2"><span class="emoji">🌡️</span><span class="big">Bottom-Hole Temperature</span></div>
           <div class="body">
@@ -273,11 +307,11 @@
     <div class="orgs">
       <div class="card org">
         <div class="logo"><span class="wordmark wm-tiger">TIGER<br>ANALYTICS</span><span class="years">2025 – Present</span></div>
-        <div class="body"><div class="title">📄 Senior Analytics Consultant</div><div class="desc">Chicago, IL · Discover card growth, campaign, and fraud analytics</div></div>
+        <div class="body"><div class="title">📄 Senior Analytics Consultant</div><div class="desc">Chicago, IL · Client: Discover Financial Services. Card growth, campaigns, fraud and disputes</div></div>
       </div>
       <div class="card org">
-        <div class="logo"><span class="wordmark wm-uh">UNIVERSITY of<br>HOUSTON</span><span class="years">2023 – 2024</span></div>
-        <div class="body"><div class="title">📄 Data Scientist (Research Assistant)</div><div class="desc">Houston, TX · ML research on spinal cord injury outcomes</div></div>
+        <div class="logo"><span class="wordmark wm-uh" style="font-size:20px">CULLEN COLLEGE<br>of ENGINEERING</span><span class="years">2023 – 2024</span></div>
+        <div class="body"><div class="title">📄 Data Scientist, Research Lab</div><div class="desc">Houston, TX · ML research on spinal cord injury outcomes, published in AJPM&amp;R</div></div>
       </div>
       <div class="card org">
         <div class="logo"><span class="wordmark wm-uh">UNIVERSITY of<br>HOUSTON</span><span class="years">Class of 2024</span></div>
@@ -285,7 +319,7 @@
       </div>
       <div class="card org">
         <div class="logo"><span class="wordmark wm-tiger">TIGER<br>ANALYTICS</span><span class="years">2022 – 2023</span></div>
-        <div class="body"><div class="title">📄 Senior Data Science Analyst</div><div class="desc">Remote · Retail and CPG analytics, MARS product recommendations</div></div>
+        <div class="body"><div class="title">📄 Senior Data Science Analyst</div><div class="desc">Remote · Led a 5-analyst team on recommendation models and A/B tests</div></div>
       </div>
       <div class="card org">
         <div class="logo"><span class="wordmark wm-vedanta">VEDANTA</span><span class="years">2019 – 2022</span></div>
@@ -321,7 +355,7 @@
         <a href="https://github.com/AzharMadani" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>GitHub</a>
       </div>
     </div>
-    <div class="quote">📍 Based in <b>Chicago, IL</b>.<br><br>Open to <b>Data Scientist</b>, <b>Senior Data Scientist</b>, and <b>ML / Analytics</b> roles in experimentation, fraud and risk, and applied AI.</div>
+    <div class="quote">📍 Based in <b>Chicago, IL</b>.<br><br>Open to <b>Data Scientist</b> and <b>Senior Data Scientist</b> roles in banking, cards and payments: experimentation, fraud and credit risk, and applied AI.</div>
   </section>
 
   <footer>© 2026 Azharmadani Syed</footer>
