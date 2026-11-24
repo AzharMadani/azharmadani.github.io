@@ -160,12 +160,12 @@
     <aside class="about">
       <h2>A little about me</h2>
       <p>I'm a data scientist who works where credit cards, customers, and risk meet. As a Senior Analytics Consultant at Tiger Analytics in Chicago, I lead customer growth, campaign, and fraud &amp; disputes analytics for Discover's 23M+ cardholder portfolio.</p>
-      <p>My day-to-day is the full card lifecycle: designing A/B and holdout tests for activation and engagement campaigns, measuring incremental lift and ROI, building fraud rules, and tracing dispute losses back to the process that caused them.</p>
+      <p>My day-to-day is the full card lifecycle: designing A/B and holdout tests for activation and engagement campaigns, measuring incremental lift and ROI, monitoring fraud models, and tracing dispute losses back to the process that caused them.</p>
       <p>I like problems where the answer has a dollar sign on it, and where I have to defend the logic to Product, Compliance, and senior leaders, not just ship a model.</p>
       <p>I hold an MS in Engineering Data Science from the University of Houston, published ML research in a peer-reviewed journal, and I'm now building agentic AI tools for financial services with LLMs, LangGraph, and MCP.</p>
       <div class="stat">
-        <div><b>$2M</b><span>in unnecessary refunds avoided</span></div>
-        <div><b>~12%</b><span>reduction in third-party fraud</span></div>
+        <div><b>$25M</b><span>estimated annual spend lift from one reissue campaign</span></div>
+        <div><b>$800K+</b><span>merchant fraud losses prevented</span></div>
         <div><b>6M</b><span>users in a single card A/B test</span></div>
       </div>
       <div class="callout"><span aria-hidden="true">💡</span><span>Looking for a data scientist for card, payments, fraud, or credit risk? Let's talk.</span></div>
@@ -175,19 +175,12 @@
       <h2>Let's take a walk through my work</h2>
       <div class="tabs" role="tablist">
         <button class="tab" role="tab" aria-selected="true" aria-controls="tab-bank" id="t-bank">💳 Banking &amp; Cards</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-ai" id="t-ai">✨ AI Agents</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="tab-ml" id="t-ml">🤖 Machine Learning</button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="tab-research" id="t-research">📄 Research</button>
       </div>
 
       <div class="gallery" id="tab-bank" role="tabpanel" aria-labelledby="t-bank">
-        <div class="card">
-          <div class="thumb g5"><span class="emoji">⚖️</span><span class="big">Dispute Court</span></div>
-          <div class="body">
-            <div class="title">🤖 Dispute Court: Multi-Agent AI for Card Disputes</div>
-            <div class="desc">A decision-support system that runs credit card disputes and chargebacks as a mock trial. Customer and merchant advocate agents argue from verified records, a verifier drops uncited claims, and a judge applies network and Reg E/Z rules. A calibrated LightGBM model then turns the ruling into a win probability, and borderline or high-value cases go to a human reviewer.</div>
-            <div class="tags"><span>LangGraph</span><span>LLM agents</span><span>LightGBM</span><span>FastAPI</span><span>Chargebacks</span></div>
-          </div>
-        </div>
         <div class="card">
           <div class="thumb g1"><span class="emoji">✉️</span><span class="big">6M-User Email A/B Test</span></div>
           <div class="body">
@@ -197,27 +190,43 @@
           </div>
         </div>
         <div class="card">
-          <div class="thumb g3"><span class="emoji">🛡️</span><span class="big">Third-Party Fraud Rules</span></div>
+          <div class="thumb g3"><span class="emoji">🛡️</span><span class="big">Merchant Fraud Detection</span></div>
           <div class="body">
-            <div class="title">🚨 Card Fraud Rule Strategy</div>
-            <div class="desc">Designed and implemented 10+ SAS fraud rules on address verification, identity mismatches, and merchant velocity by MCC, cutting third-party fraud on card transactions by ~12%.</div>
-            <div class="tags"><span>Fraud</span><span>SAS</span><span>Rule design</span><span>MCC</span></div>
+            <div class="title">🚨 Autoencoder Anomaly Detection</div>
+            <div class="desc">Deployed and monitored an autoencoder anomaly detection model for merchant fraud, retuning alert thresholds on precision and recall from investigators' case outcomes. Prevented $800K+ in fraud losses.</div>
+            <div class="tags"><span>Fraud</span><span>Autoencoders</span><span>Python</span><span>Model monitoring</span></div>
           </div>
         </div>
         <div class="card">
           <div class="thumb g2"><span class="emoji">⚖️</span><span class="big">Dispute Routing Loss</span></div>
           <div class="body">
             <div class="title">🔍 Misrouted "Does Not Recognize" Disputes</div>
-            <div class="desc">Joined intake channel, routing, and case lifecycle data in Snowflake to size ~$4.5M a year in avoidable cost from misrouted DNR disputes, 30 to 40% of which turned out to be fraud.</div>
-            <div class="tags"><span>Disputes</span><span>Snowflake SQL</span><span>Root cause</span></div>
+            <div class="desc">Joined intake channel, routing, and case lifecycle data in Snowflake and analyzed it against LightGBM fraud scores to size ~$2M a year in avoidable cost from misrouted DNR disputes. The findings led Discover to retire the DNR reason.</div>
+            <div class="tags"><span>Disputes</span><span>Snowflake SQL</span><span>LightGBM scores</span><span>Root cause</span></div>
           </div>
         </div>
         <div class="card">
           <div class="thumb g4"><span class="emoji">💵</span><span class="big">Refund Remediation</span></div>
           <div class="body">
             <div class="title">✅ Targeted Customer Remediation</div>
-            <div class="desc">Narrowed 300K potentially impacted customers to ~60K truly harmed accounts by matching cases to chargeback credits, letters, and network reason codes, avoiding ~$2M in unnecessary refunds. Defended each rule to Compliance.</div>
+            <div class="desc">Narrowed 300K potentially impacted customers to ~60K truly harmed accounts by matching cases to chargeback credits, letters, and network reason codes, avoiding ~$1.2M in unnecessary refunds. Defended each rule to Compliance.</div>
             <div class="tags"><span>Compliance</span><span>Chargebacks</span><span>SQL</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb g1"><span class="emoji">💳</span><span class="big">Card Reissue Campaign</span></div>
+          <div class="body">
+            <div class="title">📬 Reissue Activation Campaign</div>
+            <div class="desc">Led analytics for a proactive card reissue email campaign to 10M+ customers, using SQL segmentation with A/B and holdout tests. A 5% activation lift drove an estimated $25M in annual incremental spend.</div>
+            <div class="tags"><span>Holdout tests</span><span>Segmentation</span><span>Card lifecycle</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumb g7"><span class="emoji">🔀</span><span class="big">Capital One Migration</span></div>
+          <div class="body">
+            <div class="title">🗂️ Dispute Status Code Mapping</div>
+            <div class="desc">Mapped ~200 Discover dispute status codes to Capital One's and published a shared Snowflake reference table for both migration teams, avoiding ~$1M in write-offs per migration wave.</div>
+            <div class="tags"><span>Data migration</span><span>Snowflake</span><span>Disputes</span></div>
           </div>
         </div>
         <div class="card">
@@ -244,6 +253,44 @@
             <div class="tags"><span>Tableau</span><span>SQL pipelines</span><span>KPI design</span></div>
           </div>
         </div>
+      </div>
+
+      <div class="gallery" id="tab-ai" role="tabpanel" aria-labelledby="t-ai" hidden>
+        <div class="card">
+          <div class="thumb g5"><span class="emoji">⚖️</span><span class="big">Dispute Investigation Agent</span></div>
+          <div class="body">
+            <div class="title">🤖 Dispute Investigation Agent (in progress)</div>
+            <div class="desc">A multi-agent LLM system in LangGraph for card dispute review. The design runs each dispute like a mock trial: customer and merchant advocate agents argue from the case record, a verifier drops claims with no citation, and a judge agent applies network and Reg E/Z rules, with borderline or high-value cases going to a human reviewer.</div>
+            <div class="tags"><span>LangGraph</span><span>LLM agents</span><span>Chargebacks</span><span>Human in the loop</span></div>
+          </div>
+        </div>
+        <a class="card" href="https://github.com/AzharMadani/apify-job-search-agent" target="_blank" rel="noopener">
+          <div class="thumb g2"><span class="emoji">🕸️</span><span class="big">Apify Job Search Agent</span></div>
+          <div class="body">
+            <div class="title">🔎 Wide Job Search Agent</div>
+            <div class="desc">A Claude Code skill plus Python scripts that scrape every fresh Indeed posting through Apify, filter and rank them against a resume with weighted keywords, then tailor ATS resumes and draft cold emails for the best matches. About 600 fresh jobs a run for roughly $0.15.</div>
+            <div class="tags"><span>Claude Code</span><span>Apify</span><span>Python</span><span>Sub-agents</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/AzharMadani/job-hunt-agent" target="_blank" rel="noopener">
+          <div class="thumb g1"><span class="emoji">🧭</span><span class="big">Job Hunt Agent</span></div>
+          <div class="body">
+            <div class="title">📨 End-to-End Job Hunt Pipeline</div>
+            <div class="desc">Searches Indeed, scores fit, and for the top roles runs parallel sub-agents that research the company, build a tailored PDF and DOCX resume, find contacts in Apollo, and save Gmail drafts. Guardrails: it never sends, never applies, and never invents resume facts.</div>
+            <div class="tags"><span>Agents</span><span>MCP connectors</span><span>Guardrails</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/AzharMadani/robot-progress" target="_blank" rel="noopener">
+          <div class="thumb g7"><span class="emoji">🤖</span><span class="big">robot-progress</span></div>
+          <div class="body">
+            <div class="title">📟 Claude Code Progress Plugin</div>
+            <div class="desc">A TypeScript plugin that shows a small robot and progress bar while sub-agents run, listing each agent and how many are done. Installable from its own plugin marketplace.</div>
+            <div class="tags"><span>TypeScript</span><span>Hooks</span><span>Plugin</span></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery" id="tab-ml" role="tabpanel" aria-labelledby="t-ml" hidden>
         <a class="card" href="https://github.com/AzharMadani/Predicting-bottom-hole-temperature" target="_blank" rel="noopener">
           <div class="thumb g2"><span class="emoji">🌡️</span><span class="big">Bottom-Hole Temperature</span></div>
           <div class="body">
@@ -284,23 +331,55 @@
             <div class="tags"><span>CNN</span><span>TensorFlow/Keras</span><span>Computer vision</span></div>
           </div>
         </a>
+        <a class="card" href="https://github.com/AzharMadani/Customer-Churn-Prediction" target="_blank" rel="noopener">
+          <div class="thumb g1"><span class="emoji">📉</span><span class="big">Customer Churn</span></div>
+          <div class="body">
+            <div class="title">🔁 Customer Churn Prediction</div>
+            <div class="desc">Churn classification with variable selection, bidirectional elimination, additional model comparisons, and hyperparameter tuning.</div>
+            <div class="tags"><span>Classification</span><span>Feature selection</span><span>Tuning</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/saikirananugam/DIP_Team-4" target="_blank" rel="noopener">
+          <div class="thumb g6"><span class="emoji">🧑‍🤝‍🧑</span><span class="big">FairFace Bias Mitigation</span></div>
+          <div class="body">
+            <div class="title">🖼️ Fairness-Aware Face Attribute Models (team project)</div>
+            <div class="desc">Group course project predicting age, gender, and race on a balanced FairFace subset. Compared EfficientNetB0, ResNet50, MobileNetV2, VGG16, and InceptionV3; EfficientNetB0 did best (85% gender, 74% age, 76% race accuracy).</div>
+            <div class="tags"><span>CNN</span><span>Transfer learning</span><span>Fairness</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/ShreyasMysoreNarayana/Movie-Recommendation-System" target="_blank" rel="noopener">
+          <div class="thumb g5"><span class="emoji">🎬</span><span class="big">Movie Recommender</span></div>
+          <div class="body">
+            <div class="title">🍿 Movie Recommendation System (team project)</div>
+            <div class="desc">Collaborative filtering and KNN recommendations on MovieLens 20M in R with recommenderlab: give it a movie title and it returns similar movies.</div>
+            <div class="tags"><span>Recommender systems</span><span>R</span><span>recommenderlab</span></div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/AzharMadani/Machine-Learning-Algorithms" target="_blank" rel="noopener">
+          <div class="thumb g4"><span class="emoji">📚</span><span class="big">ML Algorithms</span></div>
+          <div class="body">
+            <div class="title">🧮 Machine Learning Algorithms in Python and R</div>
+            <div class="desc">Linear and logistic regression, KNN, Naive Bayes, trees, random forest, AdaBoost, gradient boosting, XGBoost, and neural networks, worked through on different datasets.</div>
+            <div class="tags"><span>Python</span><span>R</span><span>Fundamentals</span></div>
+          </div>
+        </a>
       </div>
 
       <div class="gallery" id="tab-research" role="tabpanel" aria-labelledby="t-research" hidden>
-        <div class="card">
+        <a class="card" href="https://www.ovid.com/10.1097/PHM.0000000000002991" target="_blank" rel="noopener">
           <div class="thumb g3"><span class="emoji">🫀</span><span class="big">SCI Outcomes from HRV</span></div>
           <div class="body">
             <div class="title">📄 Predicting Spinal Cord Injury Outcomes from Heart-Rate Variability</div>
             <div class="desc">Published in the <i>American Journal of Physical Medicine &amp; Rehabilitation</i>. A feedforward neural network on heart-rate variability features predicts complete vs. incomplete spinal cord injury with 86.67% accuracy and an AUC of 0.96.</div>
             <div class="tags"><span>Neural networks</span><span>Healthcare</span><span>Peer-reviewed</span></div>
           </div>
-        </div>
+        </a>
         <div class="card">
           <div class="thumb g1"><span class="emoji">🔬</span><span class="big">SCI ML Pipelines</span></div>
           <div class="body">
             <div class="title">🧪 ML Pipelines for SCI Research (University of Houston)</div>
-            <div class="desc">Random forest, XGBoost, and neural network pipelines that predicted spinal cord injury outcomes with 92% accuracy under 5-fold cross-validation. Feature selection raised accuracy by 28%.</div>
-            <div class="tags"><span>Random forest</span><span>XGBoost</span><span>Cross-validation</span></div>
+            <div class="desc">Models for injury classification, completeness, pain prediction, and autonomic dysfunction from heart-rate variability and blood pressure data, reaching 86 to 90% accuracy depending on the task. Used cross-validation, feature selection, and SHAP.</div>
+            <div class="tags"><span>Random forest</span><span>XGBoost</span><span>SHAP</span></div>
           </div>
         </div>
       </div>
@@ -318,8 +397,8 @@
         <div class="body"><div class="title">📄 Senior Analytics Consultant</div><div class="desc">Chicago, IL · Client: Discover Financial Services. Card growth, campaigns, fraud and disputes</div></div>
       </div>
       <div class="card org">
-        <div class="logo"><span class="wordmark wm-uh" style="font-size:20px">CULLEN COLLEGE<br>of ENGINEERING</span><span class="years">2023 – 2024</span></div>
-        <div class="body"><div class="title">📄 Data Scientist, Research Lab</div><div class="desc">Houston, TX · ML research on spinal cord injury outcomes, published in AJPM&amp;R</div></div>
+        <div class="logo"><span class="wordmark wm-uh" style="font-size:20px">CULLEN COLLEGE<br>of ENGINEERING</span><span class="years">2023 – 2025</span></div>
+        <div class="body"><div class="title">📄 Graduate Research Assistant, ML</div><div class="desc">Houston, TX · ML research on spinal cord injury outcomes, published in AJPM&amp;R</div></div>
       </div>
       <div class="card org">
         <div class="logo"><span class="wordmark wm-uh">UNIVERSITY of<br>HOUSTON</span><span class="years">Class of 2024</span></div>
@@ -327,7 +406,7 @@
       </div>
       <div class="card org">
         <div class="logo"><span class="wordmark wm-tiger">TIGER<br>ANALYTICS</span><span class="years">2022 – 2023</span></div>
-        <div class="body"><div class="title">📄 Senior Data Science Analyst</div><div class="desc">Remote · Led a 5-analyst team on recommendation models and A/B tests</div></div>
+        <div class="body"><div class="title">📄 Senior Data Science Analyst</div><div class="desc">Hyderabad, India · Led a 5-analyst team on recommendation models and A/B tests</div></div>
       </div>
       <div class="card org">
         <div class="logo"><span class="wordmark wm-vedanta">VEDANTA</span><span class="years">2019 – 2022</span></div>
